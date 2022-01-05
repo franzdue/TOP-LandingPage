@@ -1,0 +1,1 @@
+Landing Page (only HTML+CSS) as part of the Foundations course of theOdinProject.org
