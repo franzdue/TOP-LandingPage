@@ -1,1 +1,1 @@
-Landing Page (only HTML+CSS) as part of the Foundations course of theOdinProject.org
+Landing Page as part of the Foundations course of theOdinProject.org using HTML and CSS Flexbox.
