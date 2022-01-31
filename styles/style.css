@@ -15,11 +15,20 @@ a {
     color: #F9FAF8;
 }
 
+.btn {
+    border-radius: 100px;
+    transition: 0.4s;
+    padding: 0.6rem 1.2rem;
+}
+
+/*Header*/
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #1F2937;
+    border-bottom: 1px solid #F9FAF8;
 }
 
 .containerH {
@@ -75,10 +84,7 @@ header {
 }
 
 .signup-btn {
-    padding: 1rem 2rem;
     border: 1.5px solid #F9FAF8;
-    border-radius: 100px;
-    transition: 0.4s;
 }
 
 .signup-btn:hover {
@@ -86,13 +92,30 @@ header {
     color: #1F2937;
 }
 
+/*Main*/
+
 main {
     padding-bottom: 4rem;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin: 0 auto 3rem auto;
     padding: 0 1.5rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Section 1 - About Us*/
+
+.c1 {
+    justify-content: space-between;
 }
 
 .s1 {
@@ -101,17 +124,35 @@ section {
     color: #F9FAF8;
 }
 
-.container1 {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 3rem 0;
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-}
-
 .item11 {
    width: 50%;
+}
+
+.item11 h1 {
+    font-size: 3rem;
+    line-height: 3.4rem;
+    padding: 0 0 1.2rem 0;
+}
+
+.item11 p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    width: 80%;
+    padding: 0 0 1.8rem 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.s1-btn {
+    border: 1.5px solid #F9FAF8;
+    background-color: #F9FAF8;
+    color: #1F2937;
+    font-size: 1rem;
+}
+
+.s1-btn:hover {
+    background-color: #1F2937;
+    color: #F9FAF8;
 }
 
 .item12 {
@@ -125,12 +166,7 @@ section {
     height: auto;
 }
 
-
-
-.s2 {
-    max-width: 1280px;
-    margin: 0 auto;
-}
+/*Section 2 - Destinations*/
 
 .container2-heading {
     display: flex;
@@ -139,21 +175,80 @@ section {
     padding: 0 0 1rem 0;
 }
 
-.container2 {
+.c2 {
     display: flex;
     align-items: center;
-    gap: 2rem;
-}
-
-.container2 div {
-    width: 25%;
+    justify-content: space-between;
 }
 
 .square img {
-    width: 200px;
+    width: 280px;
     height: auto;
 }
 
+/*Section 3 - Testimonial*/
+
+.s3 {
+    background-color: #52ACFF;
+  background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+}
+
+.quote-wrapper {
+    display: flex;
+    height: 50vh;
+    padding: 0 20px;
+}
+
+.quote {
+    position: relative;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 30px 0;
+    width: 100%;
+    max-width: 550px;
+    z-index: 1;
+    margin: 80px auto;
+    align-self: center;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+.quote blockquote {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 1;
+    margin: 0;
+}
+
+.quote::after {
+    position: absolute;
+    content: "”";
+    color: rgba(255, 255, 255, 1);
+    font-size: 10rem;
+    line-height: 0;
+    bottom: -43px;
+    right: 30px;
+}
+
+@media(min-width: 600px) {
+    .quote blockquote {
+        font-size: 35px;
+    }
+}
+
+.quote h4 {
+    position: relative;
+    color: #292A2B;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+/*Footer*/
 
 footer {
     position: absolute;
