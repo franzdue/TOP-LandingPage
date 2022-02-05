@@ -29,6 +29,7 @@ header {
     width: 100%;
     background-color: #1F2937;
     border-bottom: 1px solid #F9FAF8;
+    z-index: 999;
 }
 
 .containerH {
@@ -99,7 +100,7 @@ main {
 }
 
 section {
-    margin: 0 auto 3rem auto;
+    margin: 4rem auto 4rem auto;
     padding: 0 1.5rem;
 }
 
@@ -107,14 +108,14 @@ section {
     max-width: 1280px;
     margin: 0 auto;
     padding: 3rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /*Section 1 - About Us*/
 
 .c1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     justify-content: space-between;
 }
 
@@ -172,7 +173,7 @@ section {
     display: flex;
     justify-content: center;
     font-size: 36px;
-    padding: 0 0 1rem 0;
+    padding: 0 0 4rem 0;
 }
 
 .c2 {
@@ -181,9 +182,47 @@ section {
     justify-content: space-between;
 }
 
+.square {
+    position: relative;
+    width: 100%;
+}
+
 .square img {
+    display: block;
     width: 280px;
     height: auto;
+    border-radius: 50%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .75s ease;
+    background-color: rgba(127, 255, 212, 0.75);
+    border-radius: 50%;
+}
+
+.square:hover .overlay {
+    opacity: 1;
+}
+
+.destination {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 /*Section 3 - Testimonial*/
@@ -195,7 +234,7 @@ section {
 
 .quote-wrapper {
     display: flex;
-    height: 50vh;
+    height: fit-content;
     padding: 0 20px;
 }
 
@@ -209,8 +248,8 @@ section {
     z-index: 1;
     margin: 80px auto;
     align-self: center;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
 }
 
 .quote blockquote {
@@ -227,7 +266,7 @@ section {
     color: rgba(255, 255, 255, 1);
     font-size: 10rem;
     line-height: 0;
-    bottom: -43px;
+    bottom: -35px;
     right: 30px;
 }
 
